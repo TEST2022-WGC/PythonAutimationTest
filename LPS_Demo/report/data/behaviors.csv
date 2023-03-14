@@ -1,0 +1,2 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"LPS_Web_API 接口自动化测试","Profiles模块","/profiles/profile   通过卡号、手机号、证件号、Email或外部会员号 获取一条会员档案信息","2","0","2","1","0"

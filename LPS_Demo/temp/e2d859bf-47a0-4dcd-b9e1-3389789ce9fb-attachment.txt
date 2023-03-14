@@ -1,0 +1,20 @@
+INFO     WGC:conftest.py:11 session前置：本次自动化测试开始
+INFO     WGC:base_util.py:18 class前置，清空并重新写入extract
+INFO     WGC:base_util.py:21 ------------------------------接口测试用例开始------------------------------
+INFO     WGC:test_get_profile.py:35 用例中skip值为:0 继续执行用例
+INFO     WGC:test_get_profile.py:46 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+INFO     WGC:request_util.py:56 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+INFO     WGC:request_util.py:57 接口请求方式 ==>> GET
+INFO     WGC:request_util.py:59 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA"
+}
+INFO     WGC:request_util.py:60 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+INFO     WGC:request_util.py:61 接口请求体 data 参数 ==>> null
+INFO     WGC:request_util.py:62 接口请求体 json 参数 ==>> null
+INFO     WGC:request_util.py:63 接口上传附件 files 参数 ==>> None
+INFO     WGC:request_util.py:64 接口 cookies 参数 ==>> null
+INFO     WGC:test_get_profile.py:63 响应状态码为：404
+INFO     WGC:base_util.py:24 ------------------------------接口测试用例结束------------------------------

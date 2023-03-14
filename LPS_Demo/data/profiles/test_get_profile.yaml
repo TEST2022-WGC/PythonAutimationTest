@@ -1,0 +1,106 @@
+-
+ feature: 'Profiles模块'
+ story: '接口：/profiles/profile 通过卡号、手机号、证件号、Email或外部会员号 获取一条会员档案信息'
+ title: '正常卡号查询'
+ description: '通过一张存在的会员卡号，查询档案'
+ skip: 0
+ request:
+  method: 'GET'
+  url: '/profiles/profile'
+  headers:
+   Content-Type: 'application/json'
+   Authorization:
+  body:
+   params:
+    membershipCardNumber: "WGC011000001"
+ validate:
+  codes: 200
+  equals: "250869394018672640"
+  contains:
+  db_equals:
+
+-
+ feature: 'Profiles模块'
+ story: '接口：/profiles/profile 通过卡号、手机号、证件号、Email或外部会员号 获取一条会员档案信息'
+ title: '异常卡号查询'
+ description: '通过一张不存在的会员卡号，查询档案'
+ skip: 0
+ request:
+  method: 'GET'
+  url: '/profiles/profile'
+  headers:
+   Content-Type: 'application/json'
+   Authorization:
+  body:
+   params:
+    membershipCardNumber: "WGC0110000010"
+ validate:
+  codes: 404
+  equals:
+  contains:
+  db_equals:
+
+-
+ feature: 'Profiles模块'
+ story: '接口：/profiles/profile 通过卡号、手机号、证件号、Email或外部会员号 获取一条会员档案信息'
+ title: 'token异常'
+ description: 'headers不含token，查询档案'
+ skip: 0
+ request:
+  method: 'GET'
+  url: '/profiles/profile'
+  headers:
+   Content-Type: 'application/json'
+   Authorization: "123"
+  body:
+   params:
+    membershipCardNumber: "WGC0110000010"
+ validate:
+  codes: 401
+  equals:
+  contains:
+  db_equals:
+
+-
+ feature: 'Profiles模块'
+ story: '接口：/profiles/profile 通过卡号、手机号、证件号、Email或外部会员号 获取一条会员档案信息'
+ title: '正常手机号查询'
+ description: 'mobile和mobileCountryNumber均正常'
+ skip: 0
+ request:
+  method: 'GET'
+  url: '/profiles/profile'
+  headers:
+   Content-Type: 'application/json'
+   Authorization:
+  body:
+   params:
+    mobileCountryNumber: "86"
+    mobile: "15600000000"
+ validate:
+  codes: 200
+  equals:
+  contains:
+  db_equals:
+
+-
+ feature: 'Profiles模块'
+ story: '接口：/profiles/profile 通过卡号、手机号、证件号、Email或外部会员号 获取一条会员档案信息'
+ title: '异常手机号查询'
+ description: '不带mobileCountryNumber，的正常手机号请求'
+ skip: 1
+ request:
+  method: 'GET'
+  url: '/profiles/profile'
+  headers:
+   Content-Type: 'application/json'
+   Authorization:
+  body:
+   params:
+    mobileCountryNumber: "86"
+    mobile: "15600000000"
+ validate:
+  codes: 400
+  equals:
+  contains:
+  db_equals:

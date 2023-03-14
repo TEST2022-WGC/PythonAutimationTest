@@ -1,0 +1,7 @@
+INFO     WGC:base_util.py:21 ------------------------------接口测试用例开始------------------------------
+INFO     WGC:test_get_profile.py:32 是否跳过这条测试用例：1 跳过
+INFO     WGC:base_util.py:24 ------------------------------接口测试用例结束------------------------------
+INFO     WGC:base_util.py:28 class后置，清空extract文件
+INFO     WGC:conftest.py:13 session后置：本次自动化测试结束
+INFO     WGC:conftest.py:14 session后置:开始removeHandler
+INFO     WGC:conftest.py:16 session后置:removeHandler成功

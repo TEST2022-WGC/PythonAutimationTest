@@ -1,0 +1,16 @@
+web:
+ url: https://kunlun-staging.shijicloud.com/LPS320develop
+
+web_api:
+ url: https://kunlun-staging.shijicloud.com/LPS_Web_API320release
+ version: "1"
+
+pos_api:
+
+
+token:
+ token_url: https://kunlun-staging.shijicloud.com/Auth-dev/connect/token
+ date:
+  client_id: 'c3cb6ff45aeb485ca73fe50eed0a3ec1'
+  client_secret: '612a2b5ed67c4655b5f17193cb9fc4bb'
+  grant_type: 'client_credentials'

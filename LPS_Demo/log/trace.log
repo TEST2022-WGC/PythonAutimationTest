@@ -1,0 +1,789 @@
+2023-03-13 20:34:49,839 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 20:34:50,204 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 20:34:50,205 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 20:34:50,213 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTA4OTAsImV4cCI6MTY3ODcxNDQ5MCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.SpssXUF494hPy8QVdiOgBUwdfdZAtuAsm5Vt0L-eRGgwUO6CP7k4sg3K-DigSsEh87qKPHzYkxDe5dQnzOciXFwyRNAdXLIZfqp2aiUbi2P-5N3eVPrWkUiA4WJNMi4tRN2g5LiImnNMD3GUeprD5WKbFJZyc_2RnCFQSY4VfvhgC2vB6ZCjiUO1VByahcjInP8M2CMMz0ADGMdOyRiyWcSv83st8RKh66_EdvxWgUiH2iI8Stm4YQsSVJIuYq0NzOzTJIM8BOIK5w75JS3FgDcc-75FEq9MHF2uisds2nd5klVs-BHfphHJdYiIXVR-rT3Fz_UUhoMyhb6Jx-Yr4A'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 20:34:50,216 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 20:34:50,216 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 20:34:50,216 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTA4OTAsImV4cCI6MTY3ODcxNDQ5MCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.SpssXUF494hPy8QVdiOgBUwdfdZAtuAsm5Vt0L-eRGgwUO6CP7k4sg3K-DigSsEh87qKPHzYkxDe5dQnzOciXFwyRNAdXLIZfqp2aiUbi2P-5N3eVPrWkUiA4WJNMi4tRN2g5LiImnNMD3GUeprD5WKbFJZyc_2RnCFQSY4VfvhgC2vB6ZCjiUO1VByahcjInP8M2CMMz0ADGMdOyRiyWcSv83st8RKh66_EdvxWgUiH2iI8Stm4YQsSVJIuYq0NzOzTJIM8BOIK5w75JS3FgDcc-75FEq9MHF2uisds2nd5klVs-BHfphHJdYiIXVR-rT3Fz_UUhoMyhb6Jx-Yr4A"
+}
+2023-03-13 20:34:50,217 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 20:34:50,217 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 20:34:50,217 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 20:34:50,217 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 20:34:50,217 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 20:34:50,496 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 20:34:50,512 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 20:34:50,516 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 20:34:50,520 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTA4OTAsImV4cCI6MTY3ODcxNDQ5MCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.SpssXUF494hPy8QVdiOgBUwdfdZAtuAsm5Vt0L-eRGgwUO6CP7k4sg3K-DigSsEh87qKPHzYkxDe5dQnzOciXFwyRNAdXLIZfqp2aiUbi2P-5N3eVPrWkUiA4WJNMi4tRN2g5LiImnNMD3GUeprD5WKbFJZyc_2RnCFQSY4VfvhgC2vB6ZCjiUO1VByahcjInP8M2CMMz0ADGMdOyRiyWcSv83st8RKh66_EdvxWgUiH2iI8Stm4YQsSVJIuYq0NzOzTJIM8BOIK5w75JS3FgDcc-75FEq9MHF2uisds2nd5klVs-BHfphHJdYiIXVR-rT3Fz_UUhoMyhb6Jx-Yr4A'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 20:34:50,522 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 20:34:50,522 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 20:34:50,522 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTA4OTAsImV4cCI6MTY3ODcxNDQ5MCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.SpssXUF494hPy8QVdiOgBUwdfdZAtuAsm5Vt0L-eRGgwUO6CP7k4sg3K-DigSsEh87qKPHzYkxDe5dQnzOciXFwyRNAdXLIZfqp2aiUbi2P-5N3eVPrWkUiA4WJNMi4tRN2g5LiImnNMD3GUeprD5WKbFJZyc_2RnCFQSY4VfvhgC2vB6ZCjiUO1VByahcjInP8M2CMMz0ADGMdOyRiyWcSv83st8RKh66_EdvxWgUiH2iI8Stm4YQsSVJIuYq0NzOzTJIM8BOIK5w75JS3FgDcc-75FEq9MHF2uisds2nd5klVs-BHfphHJdYiIXVR-rT3Fz_UUhoMyhb6Jx-Yr4A"
+}
+2023-03-13 20:34:50,522 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 20:34:50,523 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 20:34:50,523 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 20:34:50,523 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 20:34:50,523 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 20:34:50,738 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 20:34:50,740 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 20:34:50,744 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 20:34:50,748 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 20:34:50,750 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 20:34:50,990 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 20:34:50,992 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 20:34:50,993 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 20:34:50,995 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 20:34:50,995 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 20:34:50,995 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 22:54:04,484 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 22:54:04,943 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 22:54:04,944 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 22:54:04,952 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkyNDUsImV4cCI6MTY3ODcyMjg0NSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.S0W0JOhDCXb-f1dZzpdgTMBE2_6_1_WFPxTAVFXL48HHGc9wZG41exSGZciW5eJXD08FloLI2OtwUnNDBkTAp-btpDTliPWus6SNKOOlKPExBjB-16ww7omlSpCDAHKOs6bfGMnTeMfl9EdqI_eOLo8TQqrGZiBWYwSOWXQ8fosjesD6emsoNrtgNykQmUeVGE2ZUYv-pysBvOXYCjXpUYQBa4tI5wRerDC_TlL8W9JnVoPR4tbV18q5JxEaUbJmgL4bgRixcnU31xm1t-j-AYedxSjOiX-f0Ol2cmZFNbwSbb0mcnt2kRevQdNWk8ynZvVjHjYW4tmxmDmBOZ7rWA'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 22:54:04,954 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 22:54:04,954 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 22:54:04,954 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkyNDUsImV4cCI6MTY3ODcyMjg0NSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.S0W0JOhDCXb-f1dZzpdgTMBE2_6_1_WFPxTAVFXL48HHGc9wZG41exSGZciW5eJXD08FloLI2OtwUnNDBkTAp-btpDTliPWus6SNKOOlKPExBjB-16ww7omlSpCDAHKOs6bfGMnTeMfl9EdqI_eOLo8TQqrGZiBWYwSOWXQ8fosjesD6emsoNrtgNykQmUeVGE2ZUYv-pysBvOXYCjXpUYQBa4tI5wRerDC_TlL8W9JnVoPR4tbV18q5JxEaUbJmgL4bgRixcnU31xm1t-j-AYedxSjOiX-f0Ol2cmZFNbwSbb0mcnt2kRevQdNWk8ynZvVjHjYW4tmxmDmBOZ7rWA"
+}
+2023-03-13 22:54:04,955 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 22:54:04,955 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 22:54:04,955 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 22:54:04,955 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 22:54:04,955 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 22:54:20,847 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 22:54:20,849 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 22:54:20,853 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 22:54:20,856 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkyNDUsImV4cCI6MTY3ODcyMjg0NSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.S0W0JOhDCXb-f1dZzpdgTMBE2_6_1_WFPxTAVFXL48HHGc9wZG41exSGZciW5eJXD08FloLI2OtwUnNDBkTAp-btpDTliPWus6SNKOOlKPExBjB-16ww7omlSpCDAHKOs6bfGMnTeMfl9EdqI_eOLo8TQqrGZiBWYwSOWXQ8fosjesD6emsoNrtgNykQmUeVGE2ZUYv-pysBvOXYCjXpUYQBa4tI5wRerDC_TlL8W9JnVoPR4tbV18q5JxEaUbJmgL4bgRixcnU31xm1t-j-AYedxSjOiX-f0Ol2cmZFNbwSbb0mcnt2kRevQdNWk8ynZvVjHjYW4tmxmDmBOZ7rWA'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkyNDUsImV4cCI6MTY3ODcyMjg0NSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.S0W0JOhDCXb-f1dZzpdgTMBE2_6_1_WFPxTAVFXL48HHGc9wZG41exSGZciW5eJXD08FloLI2OtwUnNDBkTAp-btpDTliPWus6SNKOOlKPExBjB-16ww7omlSpCDAHKOs6bfGMnTeMfl9EdqI_eOLo8TQqrGZiBWYwSOWXQ8fosjesD6emsoNrtgNykQmUeVGE2ZUYv-pysBvOXYCjXpUYQBa4tI5wRerDC_TlL8W9JnVoPR4tbV18q5JxEaUbJmgL4bgRixcnU31xm1t-j-AYedxSjOiX-f0Ol2cmZFNbwSbb0mcnt2kRevQdNWk8ynZvVjHjYW4tmxmDmBOZ7rWA"
+}
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 22:54:20,858 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 22:54:21,181 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 22:54:21,182 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 22:54:21,185 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 22:54:21,188 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 22:54:21,189 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 22:54:21,189 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 22:54:21,189 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 22:54:21,189 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 22:54:21,190 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 22:54:21,190 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 22:54:21,190 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 22:54:21,190 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 22:54:21,427 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 22:54:21,428 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 22:54:21,431 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 22:54:21,432 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 22:54:21,432 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 22:54:21,432 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 22:56:17,899 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 22:56:18,302 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 22:56:18,302 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 22:56:18,310 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkzNzgsImV4cCI6MTY3ODcyMjk3OCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.x6pW9080VfSYXgfidS5Pw0K31UdkGLCi74Fq93bKIL6LtCX4spJblK2YVCgAe008myM0BUAeBPG7lGkM0mojE5PMNfbC75csGNMEmaRDlQcDf8Dz5RN_TiPPp_ndnKdjHHxptDc6CShoMH5gvbLCxhbGCeJeko_7ZLnEFZFqWBsM1WQvhm2YOlTll_Ra7_UEVORDE4_zh9rVjOP1Gv3GH9DYAg4nTfzWA0bw3-Oi0Jc9VtwyOXr0dsGuMC2b_4DULALkoe7h_m-OGxAvdQPODZdvqD_0gVxbWDYcaSf59i4m7B0RhIKz06U6fzwAAekN_ist5OKX3Bk-iAazQwjKsQ'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 22:56:18,312 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 22:56:18,312 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 22:56:18,312 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkzNzgsImV4cCI6MTY3ODcyMjk3OCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.x6pW9080VfSYXgfidS5Pw0K31UdkGLCi74Fq93bKIL6LtCX4spJblK2YVCgAe008myM0BUAeBPG7lGkM0mojE5PMNfbC75csGNMEmaRDlQcDf8Dz5RN_TiPPp_ndnKdjHHxptDc6CShoMH5gvbLCxhbGCeJeko_7ZLnEFZFqWBsM1WQvhm2YOlTll_Ra7_UEVORDE4_zh9rVjOP1Gv3GH9DYAg4nTfzWA0bw3-Oi0Jc9VtwyOXr0dsGuMC2b_4DULALkoe7h_m-OGxAvdQPODZdvqD_0gVxbWDYcaSf59i4m7B0RhIKz06U6fzwAAekN_ist5OKX3Bk-iAazQwjKsQ"
+}
+2023-03-13 22:56:18,312 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 22:56:18,312 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 22:56:18,313 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 22:56:18,313 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 22:56:18,313 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 22:56:18,605 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 22:56:18,606 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 22:56:18,611 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 22:56:18,614 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkzNzgsImV4cCI6MTY3ODcyMjk3OCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.x6pW9080VfSYXgfidS5Pw0K31UdkGLCi74Fq93bKIL6LtCX4spJblK2YVCgAe008myM0BUAeBPG7lGkM0mojE5PMNfbC75csGNMEmaRDlQcDf8Dz5RN_TiPPp_ndnKdjHHxptDc6CShoMH5gvbLCxhbGCeJeko_7ZLnEFZFqWBsM1WQvhm2YOlTll_Ra7_UEVORDE4_zh9rVjOP1Gv3GH9DYAg4nTfzWA0bw3-Oi0Jc9VtwyOXr0dsGuMC2b_4DULALkoe7h_m-OGxAvdQPODZdvqD_0gVxbWDYcaSf59i4m7B0RhIKz06U6fzwAAekN_ist5OKX3Bk-iAazQwjKsQ'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 22:56:18,615 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 22:56:18,615 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 22:56:18,615 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTkzNzgsImV4cCI6MTY3ODcyMjk3OCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.x6pW9080VfSYXgfidS5Pw0K31UdkGLCi74Fq93bKIL6LtCX4spJblK2YVCgAe008myM0BUAeBPG7lGkM0mojE5PMNfbC75csGNMEmaRDlQcDf8Dz5RN_TiPPp_ndnKdjHHxptDc6CShoMH5gvbLCxhbGCeJeko_7ZLnEFZFqWBsM1WQvhm2YOlTll_Ra7_UEVORDE4_zh9rVjOP1Gv3GH9DYAg4nTfzWA0bw3-Oi0Jc9VtwyOXr0dsGuMC2b_4DULALkoe7h_m-OGxAvdQPODZdvqD_0gVxbWDYcaSf59i4m7B0RhIKz06U6fzwAAekN_ist5OKX3Bk-iAazQwjKsQ"
+}
+2023-03-13 22:56:18,615 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 22:56:18,616 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 22:56:18,616 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 22:56:18,616 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 22:56:18,616 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 22:56:18,842 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 22:56:18,844 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 22:56:18,848 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 22:56:18,850 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 22:56:18,852 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 22:56:19,084 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 22:56:19,085 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 22:56:19,086 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 22:56:19,088 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 22:56:19,088 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 22:56:19,088 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 23:01:45,954 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 23:01:46,377 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 23:01:46,378 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:01:46,386 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk3MDYsImV4cCI6MTY3ODcyMzMwNiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.Elgc6DVsprMvqaUvg3M3IgcMj8NdQatZzL3gHoRsc0CdPtQgJg-f8dyMM8gjQVup-MDcKQwv7wQ6w7WbWVZRqOU1wb-PpJ07aRPMhiPNatArQJ_cdAvFQnyhyj-W45e1q473zq8ktNc4Hy0B2pVye4Gguh5U9jyXkosNu7EDzJBWPcDfDKfgwr6Viwf8NXKceReHR58xKALtHOtJLR2cZfkp-BMwgESgNjGiMJhUVdMJS1qinkuMNaseuNdNu7_vR31umzRqhPRoV7KBbwjl3hvU_qbEfSiO_UQeFbHJKhugJNEDpOZ6OG6yljk9-6DYpPPXYDKX5zq9--1s7IOQZg'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 23:01:46,388 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:01:46,388 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:01:46,388 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk3MDYsImV4cCI6MTY3ODcyMzMwNiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.Elgc6DVsprMvqaUvg3M3IgcMj8NdQatZzL3gHoRsc0CdPtQgJg-f8dyMM8gjQVup-MDcKQwv7wQ6w7WbWVZRqOU1wb-PpJ07aRPMhiPNatArQJ_cdAvFQnyhyj-W45e1q473zq8ktNc4Hy0B2pVye4Gguh5U9jyXkosNu7EDzJBWPcDfDKfgwr6Viwf8NXKceReHR58xKALtHOtJLR2cZfkp-BMwgESgNjGiMJhUVdMJS1qinkuMNaseuNdNu7_vR31umzRqhPRoV7KBbwjl3hvU_qbEfSiO_UQeFbHJKhugJNEDpOZ6OG6yljk9-6DYpPPXYDKX5zq9--1s7IOQZg"
+}
+2023-03-13 23:01:46,388 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 23:01:46,388 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:01:46,389 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:01:46,389 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:01:46,389 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:01:46,738 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 23:01:46,740 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:01:46,744 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:01:46,748 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk3MDYsImV4cCI6MTY3ODcyMzMwNiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.Elgc6DVsprMvqaUvg3M3IgcMj8NdQatZzL3gHoRsc0CdPtQgJg-f8dyMM8gjQVup-MDcKQwv7wQ6w7WbWVZRqOU1wb-PpJ07aRPMhiPNatArQJ_cdAvFQnyhyj-W45e1q473zq8ktNc4Hy0B2pVye4Gguh5U9jyXkosNu7EDzJBWPcDfDKfgwr6Viwf8NXKceReHR58xKALtHOtJLR2cZfkp-BMwgESgNjGiMJhUVdMJS1qinkuMNaseuNdNu7_vR31umzRqhPRoV7KBbwjl3hvU_qbEfSiO_UQeFbHJKhugJNEDpOZ6OG6yljk9-6DYpPPXYDKX5zq9--1s7IOQZg'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:01:46,749 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:01:46,749 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:01:46,750 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk3MDYsImV4cCI6MTY3ODcyMzMwNiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.Elgc6DVsprMvqaUvg3M3IgcMj8NdQatZzL3gHoRsc0CdPtQgJg-f8dyMM8gjQVup-MDcKQwv7wQ6w7WbWVZRqOU1wb-PpJ07aRPMhiPNatArQJ_cdAvFQnyhyj-W45e1q473zq8ktNc4Hy0B2pVye4Gguh5U9jyXkosNu7EDzJBWPcDfDKfgwr6Viwf8NXKceReHR58xKALtHOtJLR2cZfkp-BMwgESgNjGiMJhUVdMJS1qinkuMNaseuNdNu7_vR31umzRqhPRoV7KBbwjl3hvU_qbEfSiO_UQeFbHJKhugJNEDpOZ6OG6yljk9-6DYpPPXYDKX5zq9--1s7IOQZg"
+}
+2023-03-13 23:01:46,750 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:01:46,750 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:01:46,750 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:01:46,750 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:01:46,750 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:01:46,962 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 23:01:46,964 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:01:46,968 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:01:46,970 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:01:46,972 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:01:47,229 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 23:01:47,230 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:01:47,233 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 23:01:47,234 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 23:01:47,234 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 23:01:47,234 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 23:03:30,453 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 23:03:30,857 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 23:03:30,857 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:03:30,871 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk4MTAsImV4cCI6MTY3ODcyMzQxMCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.s4fl-k7rjiHTd72A9QvPEZXqkcStsFFd_a34zGjZJzSf4jlBkozwFkwiezatteQahTYrP2rK-vv2P7Ukhvcl7e78Gqai2ImXLgy-u811LBT2R-YEpkKz_scBxP1TZJW2K0euyy6BJtwHz0bP1zFy2-uHuzYCkUJP6fq-piNXg751g31AlfJiIDt4SxbDo5hPcemTGaQRGdFxGlTA_xX8dCOD1WSJ5_NGrCEeyo2PVkOSezMB5BIEKSeh5cytpp-ZyoRrFj3yk0h2O80VEIDQPgqDEwjK6b5yDCoM0UlcA4Gg1f3z4fsq5npDY3Hy3JBmHB-xnDFU9pi8t0bc1xEidw'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 23:03:30,873 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:03:30,873 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:03:30,873 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk4MTAsImV4cCI6MTY3ODcyMzQxMCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.s4fl-k7rjiHTd72A9QvPEZXqkcStsFFd_a34zGjZJzSf4jlBkozwFkwiezatteQahTYrP2rK-vv2P7Ukhvcl7e78Gqai2ImXLgy-u811LBT2R-YEpkKz_scBxP1TZJW2K0euyy6BJtwHz0bP1zFy2-uHuzYCkUJP6fq-piNXg751g31AlfJiIDt4SxbDo5hPcemTGaQRGdFxGlTA_xX8dCOD1WSJ5_NGrCEeyo2PVkOSezMB5BIEKSeh5cytpp-ZyoRrFj3yk0h2O80VEIDQPgqDEwjK6b5yDCoM0UlcA4Gg1f3z4fsq5npDY3Hy3JBmHB-xnDFU9pi8t0bc1xEidw"
+}
+2023-03-13 23:03:30,873 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 23:03:30,873 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:03:30,874 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:03:30,874 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:03:30,874 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:03:31,286 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 23:03:31,288 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:03:31,292 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:03:31,295 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk4MTAsImV4cCI6MTY3ODcyMzQxMCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.s4fl-k7rjiHTd72A9QvPEZXqkcStsFFd_a34zGjZJzSf4jlBkozwFkwiezatteQahTYrP2rK-vv2P7Ukhvcl7e78Gqai2ImXLgy-u811LBT2R-YEpkKz_scBxP1TZJW2K0euyy6BJtwHz0bP1zFy2-uHuzYCkUJP6fq-piNXg751g31AlfJiIDt4SxbDo5hPcemTGaQRGdFxGlTA_xX8dCOD1WSJ5_NGrCEeyo2PVkOSezMB5BIEKSeh5cytpp-ZyoRrFj3yk0h2O80VEIDQPgqDEwjK6b5yDCoM0UlcA4Gg1f3z4fsq5npDY3Hy3JBmHB-xnDFU9pi8t0bc1xEidw'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:03:31,297 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:03:31,297 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:03:31,297 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk4MTAsImV4cCI6MTY3ODcyMzQxMCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.s4fl-k7rjiHTd72A9QvPEZXqkcStsFFd_a34zGjZJzSf4jlBkozwFkwiezatteQahTYrP2rK-vv2P7Ukhvcl7e78Gqai2ImXLgy-u811LBT2R-YEpkKz_scBxP1TZJW2K0euyy6BJtwHz0bP1zFy2-uHuzYCkUJP6fq-piNXg751g31AlfJiIDt4SxbDo5hPcemTGaQRGdFxGlTA_xX8dCOD1WSJ5_NGrCEeyo2PVkOSezMB5BIEKSeh5cytpp-ZyoRrFj3yk0h2O80VEIDQPgqDEwjK6b5yDCoM0UlcA4Gg1f3z4fsq5npDY3Hy3JBmHB-xnDFU9pi8t0bc1xEidw"
+}
+2023-03-13 23:03:31,298 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:03:31,298 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:03:31,298 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:03:31,298 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:03:31,298 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:03:31,515 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 23:03:31,516 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:03:31,520 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:03:31,522 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:03:31,524 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:03:31,524 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:03:31,524 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 23:03:31,524 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:03:31,525 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:03:31,525 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:03:31,525 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:03:31,525 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:03:31,735 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 23:03:31,737 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:03:31,738 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 23:03:31,739 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 23:03:31,740 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 23:03:31,740 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 23:05:02,461 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 23:05:02,820 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 23:05:02,821 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:05:02,830 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk5MDIsImV4cCI6MTY3ODcyMzUwMiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.LolgYJXzuO2aM2XH-UwAS_t9it9IghE7hcc2VZ8IXufTfXzfW58KNp95L39tFD-KrQsMR0IkW-IJvw760SAaE9X-qgDtxPuaKPpFeWtESjv2r88sCKUWWbomL-MyMW9DQaFwiAYkjqTo5HwKNR1lbCTWDQzvgs3V4omZNagDSvgRp0qZeO4VbPjJ4GMVgJNHeogiM9okVKCVEAL_dljF5ZAEU2JrL3NilmOkaW-MeMh4_MqxoFzrEv1rKGbv9WHmnmDoEwUAbvaQ0tgs7nmv93PTeInN9aza2L9XCc5UqGJ26C1aslp7moa-QgUOdpri7H7Ajh7R_mdx_D4nfaQd4A'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 23:05:02,832 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:05:02,832 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:05:02,832 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk5MDIsImV4cCI6MTY3ODcyMzUwMiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.LolgYJXzuO2aM2XH-UwAS_t9it9IghE7hcc2VZ8IXufTfXzfW58KNp95L39tFD-KrQsMR0IkW-IJvw760SAaE9X-qgDtxPuaKPpFeWtESjv2r88sCKUWWbomL-MyMW9DQaFwiAYkjqTo5HwKNR1lbCTWDQzvgs3V4omZNagDSvgRp0qZeO4VbPjJ4GMVgJNHeogiM9okVKCVEAL_dljF5ZAEU2JrL3NilmOkaW-MeMh4_MqxoFzrEv1rKGbv9WHmnmDoEwUAbvaQ0tgs7nmv93PTeInN9aza2L9XCc5UqGJ26C1aslp7moa-QgUOdpri7H7Ajh7R_mdx_D4nfaQd4A"
+}
+2023-03-13 23:05:02,833 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 23:05:02,833 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:05:02,833 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:05:02,833 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:05:02,833 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:05:03,093 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 23:05:03,095 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:05:03,099 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:05:03,102 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk5MDIsImV4cCI6MTY3ODcyMzUwMiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.LolgYJXzuO2aM2XH-UwAS_t9it9IghE7hcc2VZ8IXufTfXzfW58KNp95L39tFD-KrQsMR0IkW-IJvw760SAaE9X-qgDtxPuaKPpFeWtESjv2r88sCKUWWbomL-MyMW9DQaFwiAYkjqTo5HwKNR1lbCTWDQzvgs3V4omZNagDSvgRp0qZeO4VbPjJ4GMVgJNHeogiM9okVKCVEAL_dljF5ZAEU2JrL3NilmOkaW-MeMh4_MqxoFzrEv1rKGbv9WHmnmDoEwUAbvaQ0tgs7nmv93PTeInN9aza2L9XCc5UqGJ26C1aslp7moa-QgUOdpri7H7Ajh7R_mdx_D4nfaQd4A'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:05:03,104 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:05:03,104 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:05:03,104 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MTk5MDIsImV4cCI6MTY3ODcyMzUwMiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.LolgYJXzuO2aM2XH-UwAS_t9it9IghE7hcc2VZ8IXufTfXzfW58KNp95L39tFD-KrQsMR0IkW-IJvw760SAaE9X-qgDtxPuaKPpFeWtESjv2r88sCKUWWbomL-MyMW9DQaFwiAYkjqTo5HwKNR1lbCTWDQzvgs3V4omZNagDSvgRp0qZeO4VbPjJ4GMVgJNHeogiM9okVKCVEAL_dljF5ZAEU2JrL3NilmOkaW-MeMh4_MqxoFzrEv1rKGbv9WHmnmDoEwUAbvaQ0tgs7nmv93PTeInN9aza2L9XCc5UqGJ26C1aslp7moa-QgUOdpri7H7Ajh7R_mdx_D4nfaQd4A"
+}
+2023-03-13 23:05:03,104 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:05:03,104 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:05:03,104 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:05:03,105 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:05:03,105 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:05:03,321 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 23:05:03,324 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:05:03,327 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:05:03,330 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:05:03,330 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:05:03,330 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:05:03,331 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 23:05:03,331 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:05:03,331 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:05:03,331 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:05:03,331 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:05:03,331 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:05:03,544 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 23:05:03,545 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:05:03,547 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 23:05:03,548 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 23:05:03,548 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 23:05:03,548 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 23:08:53,144 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 23:08:53,591 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 23:08:53,591 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:08:53,608 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjAxMzMsImV4cCI6MTY3ODcyMzczMywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.X4ynfQ7on4-JFaA3hCndwgSq-xdQEcD1exR1GRtW-Tlrlr9piR1L4NDV78YllDCpww11Q4JG8BF8HD-F8VkcEZRNFBpr8zGt-hItV9-x2IHbuvPirEeM6oJPD8fKEu9EvIfEw5e0vp274djZGrVtjKq2Z-F1QhhAvU6-FX4w0hZ9DfuwDj5xTGMppqXucUynSMVp4_shhG3-ESydL1z5ugmlWDuqbd5Fd3FTKe0iHAwBUYoVSoGl8aubaOhCdtCyFnfoyAEskTZpp_01CCKtuHf6qj_uVKjvpHhPvzB0gFEPLOks0xAZq2c4vCgZ5B6xpvlhXC0l-HhNTSxLHEZteg'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 23:08:53,610 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:08:53,610 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:08:53,610 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjAxMzMsImV4cCI6MTY3ODcyMzczMywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.X4ynfQ7on4-JFaA3hCndwgSq-xdQEcD1exR1GRtW-Tlrlr9piR1L4NDV78YllDCpww11Q4JG8BF8HD-F8VkcEZRNFBpr8zGt-hItV9-x2IHbuvPirEeM6oJPD8fKEu9EvIfEw5e0vp274djZGrVtjKq2Z-F1QhhAvU6-FX4w0hZ9DfuwDj5xTGMppqXucUynSMVp4_shhG3-ESydL1z5ugmlWDuqbd5Fd3FTKe0iHAwBUYoVSoGl8aubaOhCdtCyFnfoyAEskTZpp_01CCKtuHf6qj_uVKjvpHhPvzB0gFEPLOks0xAZq2c4vCgZ5B6xpvlhXC0l-HhNTSxLHEZteg"
+}
+2023-03-13 23:08:53,610 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 23:08:53,611 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:08:53,611 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:08:53,611 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:08:53,611 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:08:53,894 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 23:08:53,895 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:08:53,899 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:08:53,902 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjAxMzMsImV4cCI6MTY3ODcyMzczMywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.X4ynfQ7on4-JFaA3hCndwgSq-xdQEcD1exR1GRtW-Tlrlr9piR1L4NDV78YllDCpww11Q4JG8BF8HD-F8VkcEZRNFBpr8zGt-hItV9-x2IHbuvPirEeM6oJPD8fKEu9EvIfEw5e0vp274djZGrVtjKq2Z-F1QhhAvU6-FX4w0hZ9DfuwDj5xTGMppqXucUynSMVp4_shhG3-ESydL1z5ugmlWDuqbd5Fd3FTKe0iHAwBUYoVSoGl8aubaOhCdtCyFnfoyAEskTZpp_01CCKtuHf6qj_uVKjvpHhPvzB0gFEPLOks0xAZq2c4vCgZ5B6xpvlhXC0l-HhNTSxLHEZteg'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:08:53,904 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:08:53,904 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:08:53,904 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjAxMzMsImV4cCI6MTY3ODcyMzczMywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.X4ynfQ7on4-JFaA3hCndwgSq-xdQEcD1exR1GRtW-Tlrlr9piR1L4NDV78YllDCpww11Q4JG8BF8HD-F8VkcEZRNFBpr8zGt-hItV9-x2IHbuvPirEeM6oJPD8fKEu9EvIfEw5e0vp274djZGrVtjKq2Z-F1QhhAvU6-FX4w0hZ9DfuwDj5xTGMppqXucUynSMVp4_shhG3-ESydL1z5ugmlWDuqbd5Fd3FTKe0iHAwBUYoVSoGl8aubaOhCdtCyFnfoyAEskTZpp_01CCKtuHf6qj_uVKjvpHhPvzB0gFEPLOks0xAZq2c4vCgZ5B6xpvlhXC0l-HhNTSxLHEZteg"
+}
+2023-03-13 23:08:53,904 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:08:53,905 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:08:53,905 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:08:53,905 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:08:53,905 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:08:54,116 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 23:08:54,118 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:08:54,123 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:08:54,125 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:08:54,127 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:08:54,127 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:08:54,127 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 23:08:54,127 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:08:54,127 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:08:54,127 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:08:54,128 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:08:54,128 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:08:54,406 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 23:08:54,407 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:08:54,410 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 23:08:54,411 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 23:08:54,411 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 23:08:54,411 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 23:14:46,100 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 23:14:46,527 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 23:14:46,528 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:14:46,538 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA0ODYsImV4cCI6MTY3ODcyNDA4NiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.XybAOpLMzjDqG4H2No3ub_SPaZNF4rffOvpKPedINbbuJ0l2YpAoUZw9fXCjouJUOBIcsVHb0nILjL9dauWjN-NOGL2x2D_DSpmy_PGwRCvzegRVYyikEyrxoABTFBO_SSXYZMrn0jJhslBFXnxbw70Y-q2NPwdO1cTusxBYuUZmXO1mB_-DG5wXZEMRO1F0fE15z8IiegxXLuftFHR-EgoEpFLLwoRtXFI9q4c_b2DkMEUIdHxm96-X2L20lULrz59ClvCyR3t8ne3zxn2u_B3M5htiQtI-6HCxJywF3za8RJ8zFTCKy9F6l_-xt9VQJ2WXsW0ShCBJjtozMXnU2A'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 23:14:46,539 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:14:46,539 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:14:46,540 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA0ODYsImV4cCI6MTY3ODcyNDA4NiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.XybAOpLMzjDqG4H2No3ub_SPaZNF4rffOvpKPedINbbuJ0l2YpAoUZw9fXCjouJUOBIcsVHb0nILjL9dauWjN-NOGL2x2D_DSpmy_PGwRCvzegRVYyikEyrxoABTFBO_SSXYZMrn0jJhslBFXnxbw70Y-q2NPwdO1cTusxBYuUZmXO1mB_-DG5wXZEMRO1F0fE15z8IiegxXLuftFHR-EgoEpFLLwoRtXFI9q4c_b2DkMEUIdHxm96-X2L20lULrz59ClvCyR3t8ne3zxn2u_B3M5htiQtI-6HCxJywF3za8RJ8zFTCKy9F6l_-xt9VQJ2WXsW0ShCBJjtozMXnU2A"
+}
+2023-03-13 23:14:46,540 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 23:14:46,540 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:14:46,540 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:14:46,540 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:14:46,540 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:14:46,811 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 23:14:46,812 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:14:46,816 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:14:46,819 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA0ODYsImV4cCI6MTY3ODcyNDA4NiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.XybAOpLMzjDqG4H2No3ub_SPaZNF4rffOvpKPedINbbuJ0l2YpAoUZw9fXCjouJUOBIcsVHb0nILjL9dauWjN-NOGL2x2D_DSpmy_PGwRCvzegRVYyikEyrxoABTFBO_SSXYZMrn0jJhslBFXnxbw70Y-q2NPwdO1cTusxBYuUZmXO1mB_-DG5wXZEMRO1F0fE15z8IiegxXLuftFHR-EgoEpFLLwoRtXFI9q4c_b2DkMEUIdHxm96-X2L20lULrz59ClvCyR3t8ne3zxn2u_B3M5htiQtI-6HCxJywF3za8RJ8zFTCKy9F6l_-xt9VQJ2WXsW0ShCBJjtozMXnU2A'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA0ODYsImV4cCI6MTY3ODcyNDA4NiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.XybAOpLMzjDqG4H2No3ub_SPaZNF4rffOvpKPedINbbuJ0l2YpAoUZw9fXCjouJUOBIcsVHb0nILjL9dauWjN-NOGL2x2D_DSpmy_PGwRCvzegRVYyikEyrxoABTFBO_SSXYZMrn0jJhslBFXnxbw70Y-q2NPwdO1cTusxBYuUZmXO1mB_-DG5wXZEMRO1F0fE15z8IiegxXLuftFHR-EgoEpFLLwoRtXFI9q4c_b2DkMEUIdHxm96-X2L20lULrz59ClvCyR3t8ne3zxn2u_B3M5htiQtI-6HCxJywF3za8RJ8zFTCKy9F6l_-xt9VQJ2WXsW0ShCBJjtozMXnU2A"
+}
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:14:46,821 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:14:47,056 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 23:14:47,057 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:14:47,063 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:14:47,065 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:14:47,066 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:14:47,066 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:14:47,066 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 23:14:47,067 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:14:47,067 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:14:47,067 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:14:47,067 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:14:47,067 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:14:47,274 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 23:14:47,278 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:14:47,278 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 23:14:47,280 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 23:14:47,280 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 23:14:47,280 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-13 23:15:34,384 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-13 23:15:34,746 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-13 23:15:34,747 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:15:34,756 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA1MzQsImV4cCI6MTY3ODcyNDEzNCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.3Nu09IzHbvLeJPH4Tw4DVml_8vauK1Q5MGBOvmNs-qVrfk0JgDQLKR9cNBDzv2MHfvhYfSYcI-ljtliKilTnKcFjfiio-EO5gVcMz9BH1DfgHC3jJMgV18sjGpwOI4LsPL-CD-liwCyQVLoBneUEGXRtTOJQriPIwKz_2OFU4dS2BodOvmprt37SAa-sivANTZBhM2-5A3FIxJLO-qYF9pyb_FL5-VF10LQChlGRjcQMOmTzi_f__f4uyz20n7hxPFKufZoFKU0sKO4szGGuYloICFD1T3lup7-yxTDKpdLsQBgvETxDhiVx3seBDMB0zqKseCi909TXFC18KnYMvw'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-13 23:15:34,758 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:15:34,758 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:15:34,758 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA1MzQsImV4cCI6MTY3ODcyNDEzNCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.3Nu09IzHbvLeJPH4Tw4DVml_8vauK1Q5MGBOvmNs-qVrfk0JgDQLKR9cNBDzv2MHfvhYfSYcI-ljtliKilTnKcFjfiio-EO5gVcMz9BH1DfgHC3jJMgV18sjGpwOI4LsPL-CD-liwCyQVLoBneUEGXRtTOJQriPIwKz_2OFU4dS2BodOvmprt37SAa-sivANTZBhM2-5A3FIxJLO-qYF9pyb_FL5-VF10LQChlGRjcQMOmTzi_f__f4uyz20n7hxPFKufZoFKU0sKO4szGGuYloICFD1T3lup7-yxTDKpdLsQBgvETxDhiVx3seBDMB0zqKseCi909TXFC18KnYMvw"
+}
+2023-03-13 23:15:34,759 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-13 23:15:34,759 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:15:34,759 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:15:34,759 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:15:34,759 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:15:35,033 | INFO  | test_get_profile.py | line:57 | 响应状态码为：200
+2023-03-13 23:15:35,034 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:15:35,039 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:15:35,042 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA1MzQsImV4cCI6MTY3ODcyNDEzNCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.3Nu09IzHbvLeJPH4Tw4DVml_8vauK1Q5MGBOvmNs-qVrfk0JgDQLKR9cNBDzv2MHfvhYfSYcI-ljtliKilTnKcFjfiio-EO5gVcMz9BH1DfgHC3jJMgV18sjGpwOI4LsPL-CD-liwCyQVLoBneUEGXRtTOJQriPIwKz_2OFU4dS2BodOvmprt37SAa-sivANTZBhM2-5A3FIxJLO-qYF9pyb_FL5-VF10LQChlGRjcQMOmTzi_f__f4uyz20n7hxPFKufZoFKU0sKO4szGGuYloICFD1T3lup7-yxTDKpdLsQBgvETxDhiVx3seBDMB0zqKseCi909TXFC18KnYMvw'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:15:35,043 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:15:35,044 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:15:35,044 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3MjA1MzQsImV4cCI6MTY3ODcyNDEzNCwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.3Nu09IzHbvLeJPH4Tw4DVml_8vauK1Q5MGBOvmNs-qVrfk0JgDQLKR9cNBDzv2MHfvhYfSYcI-ljtliKilTnKcFjfiio-EO5gVcMz9BH1DfgHC3jJMgV18sjGpwOI4LsPL-CD-liwCyQVLoBneUEGXRtTOJQriPIwKz_2OFU4dS2BodOvmprt37SAa-sivANTZBhM2-5A3FIxJLO-qYF9pyb_FL5-VF10LQChlGRjcQMOmTzi_f__f4uyz20n7hxPFKufZoFKU0sKO4szGGuYloICFD1T3lup7-yxTDKpdLsQBgvETxDhiVx3seBDMB0zqKseCi909TXFC18KnYMvw"
+}
+2023-03-13 23:15:35,044 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:15:35,044 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:15:35,044 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:15:35,044 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:15:35,044 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:15:35,270 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-13 23:15:35,274 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:15:35,280 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-13 23:15:35,284 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-13 23:15:35,288 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-13 23:15:35,289 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-13 23:15:35,289 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-13 23:15:35,290 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-13 23:15:35,290 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-13 23:15:35,291 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-13 23:15:35,291 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-13 23:15:35,292 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-13 23:15:35,505 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-13 23:15:35,507 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-13 23:15:35,508 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-13 23:15:35,510 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-13 23:15:35,510 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-13 23:15:35,510 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-14 20:00:36,340 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-14 20:00:43,943 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-14 20:00:43,943 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 20:00:43,951 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTUyNDIsImV4cCI6MTY3ODc5ODg0MiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.eLgNU1MCDo3tDkZFYbz-F_eNAeGzdIzXWU3pF6XK4MgawxvMhRRqKt8qu22JHBEnMSemD-wSzYMSn8PlKU4Q-sK-lzb1g5nugQdDf_M3_ZzdaDVtKKL5t2yVVXN_5PgIs_5xupuZoG-wxlFy9J-Tbba9s4fu0_aVUrycFw9_cTsWz01wLeixX2TeHu9aOnQ-HcEuiCX6WFpihc-QKsudBF9fr2JD8ZRhqIFvfPukSKChwy1WUEVGAX6z6T__NAFtQ6X5wBbXzRBVWdf7kGRZR1nHzn0FxF8_83fEiHbu59gIiLmKNeOH3eXwqnHafDsbqj7G4JKMUvUMWa-OPdzTEA'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-14 20:00:43,953 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-14 20:00:43,953 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 20:00:43,953 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTUyNDIsImV4cCI6MTY3ODc5ODg0MiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.eLgNU1MCDo3tDkZFYbz-F_eNAeGzdIzXWU3pF6XK4MgawxvMhRRqKt8qu22JHBEnMSemD-wSzYMSn8PlKU4Q-sK-lzb1g5nugQdDf_M3_ZzdaDVtKKL5t2yVVXN_5PgIs_5xupuZoG-wxlFy9J-Tbba9s4fu0_aVUrycFw9_cTsWz01wLeixX2TeHu9aOnQ-HcEuiCX6WFpihc-QKsudBF9fr2JD8ZRhqIFvfPukSKChwy1WUEVGAX6z6T__NAFtQ6X5wBbXzRBVWdf7kGRZR1nHzn0FxF8_83fEiHbu59gIiLmKNeOH3eXwqnHafDsbqj7G4JKMUvUMWa-OPdzTEA"
+}
+2023-03-14 20:00:43,953 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-14 20:00:43,953 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 20:00:43,953 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 20:00:43,953 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 20:00:43,954 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 20:01:22,932 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 20:01:22,936 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 20:01:22,939 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTUyNDIsImV4cCI6MTY3ODc5ODg0MiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.eLgNU1MCDo3tDkZFYbz-F_eNAeGzdIzXWU3pF6XK4MgawxvMhRRqKt8qu22JHBEnMSemD-wSzYMSn8PlKU4Q-sK-lzb1g5nugQdDf_M3_ZzdaDVtKKL5t2yVVXN_5PgIs_5xupuZoG-wxlFy9J-Tbba9s4fu0_aVUrycFw9_cTsWz01wLeixX2TeHu9aOnQ-HcEuiCX6WFpihc-QKsudBF9fr2JD8ZRhqIFvfPukSKChwy1WUEVGAX6z6T__NAFtQ6X5wBbXzRBVWdf7kGRZR1nHzn0FxF8_83fEiHbu59gIiLmKNeOH3eXwqnHafDsbqj7G4JKMUvUMWa-OPdzTEA'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 20:01:22,941 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-14 20:01:22,941 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 20:01:22,941 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTUyNDIsImV4cCI6MTY3ODc5ODg0MiwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.eLgNU1MCDo3tDkZFYbz-F_eNAeGzdIzXWU3pF6XK4MgawxvMhRRqKt8qu22JHBEnMSemD-wSzYMSn8PlKU4Q-sK-lzb1g5nugQdDf_M3_ZzdaDVtKKL5t2yVVXN_5PgIs_5xupuZoG-wxlFy9J-Tbba9s4fu0_aVUrycFw9_cTsWz01wLeixX2TeHu9aOnQ-HcEuiCX6WFpihc-QKsudBF9fr2JD8ZRhqIFvfPukSKChwy1WUEVGAX6z6T__NAFtQ6X5wBbXzRBVWdf7kGRZR1nHzn0FxF8_83fEiHbu59gIiLmKNeOH3eXwqnHafDsbqj7G4JKMUvUMWa-OPdzTEA"
+}
+2023-03-14 20:01:22,941 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 20:01:22,941 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 20:01:22,941 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 20:01:22,941 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 20:01:22,942 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 20:01:23,168 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-14 20:01:23,169 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 20:01:23,173 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 20:01:23,175 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 20:01:23,177 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320develop/api/v1/profiles/profile
+2023-03-14 20:01:23,177 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 20:01:23,177 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-14 20:01:23,177 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 20:01:23,177 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 20:01:23,178 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 20:01:23,178 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 20:01:23,178 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 20:01:23,404 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-14 20:01:23,405 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 20:01:23,407 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-14 20:01:23,410 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-14 20:01:23,410 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-14 20:01:23,410 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-14 20:04:14,094 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-14 20:04:14,479 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-14 20:04:14,480 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 20:04:14,488 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTU0NTMsImV4cCI6MTY3ODc5OTA1MywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.e9pqB27UuhISQFBvdfJJrQVzZBX0SpO5MwCTCSZPD7-M8nwsuZcneabjhVvtyIQMOXGqUQemZAExsyFR_jv1Eg-VN5AH4sq-DJR1LxGrHCJyxNoTMNV3ogPZsmbEox2ScVJHRs5PzKTvNsLvn5Ei95YIF37NhG_8WHSj9zcZSKy3qnTszXWEI_jegNSDdmwXGi3xwHH9_rDVLKvSkyEmz_kp5Gh3XRrusOgZ3r7p9KQJI0sNdkVnzAOSIjuHNQiI70knxRiYj2-snEusxVVCFLDJjNQ3k7UwwtkfJAqAoFNTG3sEZO_PEsSeNLrShE6AIrMDB6_ARZPYRDDdOlI2jw'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-14 20:04:14,490 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 20:04:14,490 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 20:04:14,490 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTU0NTMsImV4cCI6MTY3ODc5OTA1MywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.e9pqB27UuhISQFBvdfJJrQVzZBX0SpO5MwCTCSZPD7-M8nwsuZcneabjhVvtyIQMOXGqUQemZAExsyFR_jv1Eg-VN5AH4sq-DJR1LxGrHCJyxNoTMNV3ogPZsmbEox2ScVJHRs5PzKTvNsLvn5Ei95YIF37NhG_8WHSj9zcZSKy3qnTszXWEI_jegNSDdmwXGi3xwHH9_rDVLKvSkyEmz_kp5Gh3XRrusOgZ3r7p9KQJI0sNdkVnzAOSIjuHNQiI70knxRiYj2-snEusxVVCFLDJjNQ3k7UwwtkfJAqAoFNTG3sEZO_PEsSeNLrShE6AIrMDB6_ARZPYRDDdOlI2jw"
+}
+2023-03-14 20:04:14,490 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-14 20:04:14,490 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 20:04:14,490 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 20:04:14,490 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 20:04:14,491 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 20:04:38,125 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 20:04:38,131 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 20:04:38,134 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTU0NTMsImV4cCI6MTY3ODc5OTA1MywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.e9pqB27UuhISQFBvdfJJrQVzZBX0SpO5MwCTCSZPD7-M8nwsuZcneabjhVvtyIQMOXGqUQemZAExsyFR_jv1Eg-VN5AH4sq-DJR1LxGrHCJyxNoTMNV3ogPZsmbEox2ScVJHRs5PzKTvNsLvn5Ei95YIF37NhG_8WHSj9zcZSKy3qnTszXWEI_jegNSDdmwXGi3xwHH9_rDVLKvSkyEmz_kp5Gh3XRrusOgZ3r7p9KQJI0sNdkVnzAOSIjuHNQiI70knxRiYj2-snEusxVVCFLDJjNQ3k7UwwtkfJAqAoFNTG3sEZO_PEsSeNLrShE6AIrMDB6_ARZPYRDDdOlI2jw'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 20:04:38,136 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 20:04:38,136 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 20:04:38,136 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg3OTU0NTMsImV4cCI6MTY3ODc5OTA1MywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.e9pqB27UuhISQFBvdfJJrQVzZBX0SpO5MwCTCSZPD7-M8nwsuZcneabjhVvtyIQMOXGqUQemZAExsyFR_jv1Eg-VN5AH4sq-DJR1LxGrHCJyxNoTMNV3ogPZsmbEox2ScVJHRs5PzKTvNsLvn5Ei95YIF37NhG_8WHSj9zcZSKy3qnTszXWEI_jegNSDdmwXGi3xwHH9_rDVLKvSkyEmz_kp5Gh3XRrusOgZ3r7p9KQJI0sNdkVnzAOSIjuHNQiI70knxRiYj2-snEusxVVCFLDJjNQ3k7UwwtkfJAqAoFNTG3sEZO_PEsSeNLrShE6AIrMDB6_ARZPYRDDdOlI2jw"
+}
+2023-03-14 20:04:38,136 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 20:04:38,136 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 20:04:38,137 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 20:04:38,137 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 20:04:38,137 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 20:04:38,416 | INFO  | test_get_profile.py | line:60 | 响应状态码为：404
+2023-03-14 20:04:38,419 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 20:04:38,422 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 20:04:38,425 | INFO  | test_get_profile.py | line:42 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 20:04:38,427 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 20:04:38,427 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 20:04:38,427 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-14 20:04:38,427 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 20:04:38,427 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 20:04:38,428 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 20:04:38,428 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 20:04:38,428 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 20:04:38,661 | INFO  | test_get_profile.py | line:60 | 响应状态码为：401
+2023-03-14 20:04:38,663 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 20:04:38,665 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-14 20:04:38,666 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-14 20:04:38,666 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-14 20:04:38,666 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-14 22:06:24,871 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-14 22:06:32,192 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-14 22:06:32,193 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 22:06:32,194 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 22:06:32,201 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDI3OTEsImV4cCI6MTY3ODgwNjM5MSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.MsiPiXy9NCdlSTn9kxA3RE9Wt4HuPyq6AK0RtMuptrUsOeJHPgTsx0rHMdCvFWHxRZ95CRKsvdqVacB1R-Iz9PGFAQuKKZWR_VyXjHRBiVwYYb8BU_XuzbKJWV5-sJO3XXlbiwTQA5spnrk28gdH5DK5H4uXd3Vi-Zw2CvyzaaPuKnhWkYjrLaKB_QJy4X2GSRIxTNk36O7RE-G2DODcdmxUMLWFTi6YYo0xwX08BZHYb2yxUWM3mLF52i1giBCD-4j0On3aZT-en5mdsaKl_C3lBhULB3eTR9NVFm8qXw2nyCqOq7x2gE9_9cW8t9zrp70BaQ0r6QlcZfEsbWzupQ'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-14 22:06:32,203 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 22:06:32,203 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 22:06:32,203 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDI3OTEsImV4cCI6MTY3ODgwNjM5MSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.MsiPiXy9NCdlSTn9kxA3RE9Wt4HuPyq6AK0RtMuptrUsOeJHPgTsx0rHMdCvFWHxRZ95CRKsvdqVacB1R-Iz9PGFAQuKKZWR_VyXjHRBiVwYYb8BU_XuzbKJWV5-sJO3XXlbiwTQA5spnrk28gdH5DK5H4uXd3Vi-Zw2CvyzaaPuKnhWkYjrLaKB_QJy4X2GSRIxTNk36O7RE-G2DODcdmxUMLWFTi6YYo0xwX08BZHYb2yxUWM3mLF52i1giBCD-4j0On3aZT-en5mdsaKl_C3lBhULB3eTR9NVFm8qXw2nyCqOq7x2gE9_9cW8t9zrp70BaQ0r6QlcZfEsbWzupQ"
+}
+2023-03-14 22:06:32,203 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-14 22:06:32,203 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 22:06:32,203 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 22:06:32,203 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 22:06:32,204 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 22:06:48,249 | INFO  | test_get_profile.py | line:63 | 响应状态码为：404
+2023-03-14 22:06:48,365 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 22:06:48,369 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 22:06:48,370 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 22:06:48,372 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDI3OTEsImV4cCI6MTY3ODgwNjM5MSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.MsiPiXy9NCdlSTn9kxA3RE9Wt4HuPyq6AK0RtMuptrUsOeJHPgTsx0rHMdCvFWHxRZ95CRKsvdqVacB1R-Iz9PGFAQuKKZWR_VyXjHRBiVwYYb8BU_XuzbKJWV5-sJO3XXlbiwTQA5spnrk28gdH5DK5H4uXd3Vi-Zw2CvyzaaPuKnhWkYjrLaKB_QJy4X2GSRIxTNk36O7RE-G2DODcdmxUMLWFTi6YYo0xwX08BZHYb2yxUWM3mLF52i1giBCD-4j0On3aZT-en5mdsaKl_C3lBhULB3eTR9NVFm8qXw2nyCqOq7x2gE9_9cW8t9zrp70BaQ0r6QlcZfEsbWzupQ'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDI3OTEsImV4cCI6MTY3ODgwNjM5MSwiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.MsiPiXy9NCdlSTn9kxA3RE9Wt4HuPyq6AK0RtMuptrUsOeJHPgTsx0rHMdCvFWHxRZ95CRKsvdqVacB1R-Iz9PGFAQuKKZWR_VyXjHRBiVwYYb8BU_XuzbKJWV5-sJO3XXlbiwTQA5spnrk28gdH5DK5H4uXd3Vi-Zw2CvyzaaPuKnhWkYjrLaKB_QJy4X2GSRIxTNk36O7RE-G2DODcdmxUMLWFTi6YYo0xwX08BZHYb2yxUWM3mLF52i1giBCD-4j0On3aZT-en5mdsaKl_C3lBhULB3eTR9NVFm8qXw2nyCqOq7x2gE9_9cW8t9zrp70BaQ0r6QlcZfEsbWzupQ"
+}
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 22:06:48,374 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 22:06:48,615 | INFO  | test_get_profile.py | line:63 | 响应状态码为：404
+2023-03-14 22:06:48,617 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 22:06:48,621 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 22:06:48,621 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 22:06:48,623 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 22:06:48,625 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 22:06:48,625 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 22:06:48,625 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-14 22:06:48,625 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 22:06:48,625 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 22:06:48,626 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 22:06:48,626 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 22:06:48,626 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 22:06:48,853 | INFO  | test_get_profile.py | line:63 | 响应状态码为：401
+2023-03-14 22:06:48,854 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 22:06:48,858 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 22:06:48,858 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 22:06:48,860 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'mobileCountryNumber': '86', 'mobile': '15600000000'}}
+2023-03-14 22:06:48,862 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 22:06:48,862 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 22:06:48,862 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-14 22:06:48,863 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "mobileCountryNumber": "86",
+    "mobile": "15600000000"
+}
+2023-03-14 22:06:48,863 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 22:06:48,863 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 22:06:48,863 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 22:06:48,863 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 22:06:49,074 | INFO  | test_get_profile.py | line:63 | 响应状态码为：401
+2023-03-14 22:06:49,081 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 22:06:49,086 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 22:06:49,087 | INFO  | test_get_profile.py | line:32 | 是否跳过这条测试用例：1 跳过
+2023-03-14 22:06:49,249 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 22:06:49,252 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-14 22:06:49,253 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-14 22:06:49,253 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-14 22:06:49,253 | INFO  | conftest.py | line:16 | session后置:removeHandler成功
+2023-03-14 23:21:39,820 | INFO  | conftest.py | line:11 | session前置：本次自动化测试开始
+2023-03-14 23:21:48,725 | INFO  | base_util.py | line:18 | class前置，清空并重新写入extract
+2023-03-14 23:21:48,726 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 23:21:48,726 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 23:21:48,733 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA'},params:{'params': {'membershipCardNumber': 'WGC011000001'}}
+2023-03-14 23:21:48,735 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 23:21:48,735 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 23:21:48,735 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA"
+}
+2023-03-14 23:21:48,736 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC011000001"
+}
+2023-03-14 23:21:48,736 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 23:21:48,736 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 23:21:48,736 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 23:21:48,736 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 23:22:12,353 | INFO  | test_get_profile.py | line:63 | 响应状态码为：404
+2023-03-14 23:22:12,540 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 23:22:12,544 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 23:22:12,544 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 23:22:12,547 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 23:22:12,548 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 23:22:12,549 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 23:22:12,549 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA"
+}
+2023-03-14 23:22:12,549 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 23:22:12,549 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 23:22:12,549 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 23:22:12,549 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 23:22:12,549 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 23:22:12,782 | INFO  | test_get_profile.py | line:63 | 响应状态码为：404
+2023-03-14 23:22:12,784 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 23:22:12,787 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 23:22:12,788 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 23:22:12,790 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+2023-03-14 23:22:12,792 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 23:22:12,792 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 23:22:12,793 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+2023-03-14 23:22:12,793 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+2023-03-14 23:22:12,793 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 23:22:12,793 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 23:22:12,793 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 23:22:12,793 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 23:22:13,038 | INFO  | test_get_profile.py | line:63 | 响应状态码为：401
+2023-03-14 23:22:13,040 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 23:22:13,044 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 23:22:13,045 | INFO  | test_get_profile.py | line:35 | 用例中skip值为:0 继续执行用例
+2023-03-14 23:22:13,047 | INFO  | test_get_profile.py | line:46 | 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA'},params:{'params': {'mobileCountryNumber': '86', 'mobile': '15600000000'}}
+2023-03-14 23:22:13,049 | INFO  | request_util.py | line:56 | 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+2023-03-14 23:22:13,049 | INFO  | request_util.py | line:57 | 接口请求方式 ==>> GET
+2023-03-14 23:22:13,049 | INFO  | request_util.py | line:59 | 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzM0U3MEY2OTgwMjM5OEQ3RTM5ODVGQjA3NDI1NzY2ODBGN0IwOEYiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJFejV3OXBnQ09ZMS1PWVg3QjBKWFpvRDNzSTgifQ.eyJuYmYiOjE2Nzg4MDczMDcsImV4cCI6MTY3ODgxMDkwNywiaXNzIjoiaHR0cHM6Ly9rdW5sdW4tc3RhZ2luZy5zaGlqaWNsb3VkLmNvbS9BdXRoIiwiYXVkIjpbImh0dHBzOi8va3VubHVuLXN0YWdpbmcuc2hpamljbG91ZC5jb20vQXV0aC9yZXNvdXJjZXMiLCJMUFNfV2ViX0FQSSJdLCJjbGllbnRfaWQiOiJjM2NiNmZmNDVhZWI0ODVjYTczZmU1MGVlZDBhM2VjMSIsImNsaWVudF9DYXJkQXV0aG9yaXphdGlvbiI6IlRydWUiLCJjbGllbnRfQ291cG9uQ2hhbm5lbCI6IldFQ0hBVCIsInNjb3BlIjpbIkxQU19XZWJfQVBJIl19.UpppZ-AXnpqyJgg7Zx6VOe8KfRrz7MYYgn8YREyR9jz7u4R9wyWce_bZ6hlFS2dO-wdxgii4NxWVBtqsp5v2_NYpBsdF2S9A85mlc67MIEQ6wR0vn11W2a_hDmRGQ0saYsOlXHphYavwT0rzoVQTDH5hjMXXWCQY7dIsT8iaWXZuc0QHAkY8pK0nqFv3teUJizAsA1iVAdYmYVut-JDF3qCzQQGCCKiK5iLzsJefbuZR8dHfV6Rgu5LbFKjkcRqIYq_Z7nU0Ub0smYanACLAVbW4gFFvVz2oig8jasB_e0jq7tcTJ51gw-iha_CEdRz1Clz1zmLfCFq-68po54QJSA"
+}
+2023-03-14 23:22:13,049 | INFO  | request_util.py | line:60 | 接口请求 params 参数 ==>> {
+    "mobileCountryNumber": "86",
+    "mobile": "15600000000"
+}
+2023-03-14 23:22:13,049 | INFO  | request_util.py | line:61 | 接口请求体 data 参数 ==>> null
+2023-03-14 23:22:13,049 | INFO  | request_util.py | line:62 | 接口请求体 json 参数 ==>> null
+2023-03-14 23:22:13,050 | INFO  | request_util.py | line:63 | 接口上传附件 files 参数 ==>> None
+2023-03-14 23:22:13,050 | INFO  | request_util.py | line:64 | 接口 cookies 参数 ==>> null
+2023-03-14 23:22:13,307 | INFO  | test_get_profile.py | line:63 | 响应状态码为：404
+2023-03-14 23:22:13,313 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 23:22:13,319 | INFO  | base_util.py | line:21 | ------------------------------接口测试用例开始------------------------------
+2023-03-14 23:22:13,320 | INFO  | test_get_profile.py | line:32 | 是否跳过这条测试用例：1 跳过
+2023-03-14 23:22:13,345 | INFO  | base_util.py | line:24 | ------------------------------接口测试用例结束------------------------------
+2023-03-14 23:22:13,347 | INFO  | base_util.py | line:28 | class后置，清空extract文件
+2023-03-14 23:22:13,348 | INFO  | conftest.py | line:13 | session后置：本次自动化测试结束
+2023-03-14 23:22:13,348 | INFO  | conftest.py | line:14 | session后置:开始removeHandler
+2023-03-14 23:22:13,348 | INFO  | conftest.py | line:16 | session后置:removeHandler成功

@@ -1,0 +1,30 @@
+version: 1
+
+formatters:
+  simple_console:
+    format: '%(asctime)s | %(levelname)-5s | %(filename)s | %(lineno)d | %(message)s'
+  simple_logfile:
+    format: '%(asctime)s | %(levelname)-5s | %(filename)s | line:%(lineno)d | %(message)s'
+
+handlers:
+  console:
+    class : logging.StreamHandler
+    formatter: simple_console
+    level   : INFO
+    stream  : ext://sys.stdout
+
+  file:
+    class : logging.handlers.RotatingFileHandler
+    formatter: simple_logfile
+    filename:
+    encoding: UTF-8
+    maxBytes: 1024000
+    backupCount: 3
+
+loggers:
+  WGC:
+    level: DEBUG
+    handlers: [file]
+    propagate: yes
+
+

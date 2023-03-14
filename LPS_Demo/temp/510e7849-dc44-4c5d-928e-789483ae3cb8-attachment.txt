@@ -1,0 +1,18 @@
+INFO     WGC:base_util.py:21 ------------------------------接口测试用例开始------------------------------
+INFO     WGC:test_get_profile.py:35 用例中skip值为:0 继续执行用例
+INFO     WGC:test_get_profile.py:46 获取参数url:/api/v1/profiles/profile,method:GET,headers:{'Content-Type': 'application/json', 'Authorization': '123'},params:{'params': {'membershipCardNumber': 'WGC0110000010'}}
+INFO     WGC:request_util.py:56 接口请求地址 ==>> https://kunlun-staging.shijicloud.com/LPS_Web_API320release/api/v1/profiles/profile
+INFO     WGC:request_util.py:57 接口请求方式 ==>> GET
+INFO     WGC:request_util.py:59 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "123"
+}
+INFO     WGC:request_util.py:60 接口请求 params 参数 ==>> {
+    "membershipCardNumber": "WGC0110000010"
+}
+INFO     WGC:request_util.py:61 接口请求体 data 参数 ==>> null
+INFO     WGC:request_util.py:62 接口请求体 json 参数 ==>> null
+INFO     WGC:request_util.py:63 接口上传附件 files 参数 ==>> None
+INFO     WGC:request_util.py:64 接口 cookies 参数 ==>> null
+INFO     WGC:test_get_profile.py:63 响应状态码为：401
+INFO     WGC:base_util.py:24 ------------------------------接口测试用例结束------------------------------

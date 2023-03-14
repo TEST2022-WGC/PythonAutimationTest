@@ -1,0 +1,20 @@
+{
+    "reportName": "LPS Report",
+    "testRuns": [],
+    "statistic": {
+        "failed": 2,
+        "broken": 0,
+        "skipped": 1,
+        "passed": 2,
+        "unknown": 0,
+        "total": 5
+    },
+    "time": {
+        "start": 1678807308727,
+        "stop": 1678807333320,
+        "duration": 24593,
+        "minDuration": 0,
+        "maxDuration": 23626,
+        "sumDuration": 24379
+    }
+}
